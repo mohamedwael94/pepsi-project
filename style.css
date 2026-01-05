@@ -127,7 +127,7 @@ nav ul a {
     }
 }
 
-@keyframes animation2{
+@keyframes animation2 {
     0% {
         transform: translateY(500px);
     }
@@ -135,4 +135,64 @@ nav ul a {
     100% {
         transform: translateY(0);
     }
+}
+@media (max-width: 800px) {
+    #home .content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 2rem 0 0;
+    }
+    nav ul a {
+        padding: 5px 4px;
+        font-size: 14px;
+
+    }
+    #home .content img {
+        width: 100px; 
+    }
+    #home .content .content-text h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    }
+    #home .content .content-text h1 span {
+    font-size: 35px;
+    }
+    #home .content .content-text p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    width: 100%;
+    }
+    #home .content .content-text {
+        margin-top: 2rem;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .social {
+    flex-direction: row;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    }
+    .pepsi-types {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: block;
+    }
+    nav .logo {
+        display: block;
+        margin: 0 auto 15px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav ul a {
+        font-size: 12px;
+        padding: 0 12px 0 0;
+    }
+    
 }
